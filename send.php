@@ -18,3 +18,6 @@ if (isset($_POST['email']))
     //Формируем сообщение
     mail($to, $subject, $massage, $headers);
 }
+
+header('Location: index.html');
+exit;
