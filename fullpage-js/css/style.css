@@ -116,9 +116,10 @@ li {
     padding-top: 250px; }
     .section-4 .col-xs-3:nth-of-type(2n+1) {
       background: #f1f1f1; }
-    .section-4 .col-xs-3 img {
+    .section-4 .col-xs-3 img, .section-4 .col-xs-3 svg {
       height: 220px;
-      max-width: 100%; }
+      max-width: 100%;
+      fill: #777; }
   .section-4__abs-pos {
     position: absolute;
     top: 40px;
@@ -182,10 +183,8 @@ li {
 
 .section-7 .address-wrapper {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 50px;
+  top: 40px;
+  max-width: 40%;
   padding: 40px 20px;
   background: rgba(255, 255, 255, 0.6); }
-
-.address {
-  font: 24px/1.4 Arial, Helvetica, sans-serif; }
