@@ -126,7 +126,7 @@ li {
     z-index: 10; }
 
 .height-wrapper {
-  height: 110px; }
+  height: 80px; }
 
 .tech-name {
   font: 32px "avantgardegothiccttregular", Arial, Helvetica, sans-serif;
@@ -142,3 +142,34 @@ li {
     font-weight: 100;
     color: #888;
     margin-top: 40px; }
+
+.section-5 .heading-wrapper {
+  margin-top: 40px;
+  padding-left: 6%; }
+
+.section-5 .fp-tableCell {
+  vertical-align: top; }
+
+.section-5 ul {
+  margin: 0;
+  padding: 0; }
+
+.section-5 li {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 10%; }
+  .section-5 li:nth-of-type(2n+1) {
+    background: #eee; }
+
+.section-5 .bullet:before {
+  content: '\2714';
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 20px; }
+
+.section-6 .fp-tableCell {
+  vertical-align: top; }
+
+.section-6 .img-wrapper {
+  padding-top: 4%;
+  text-align: center; }
