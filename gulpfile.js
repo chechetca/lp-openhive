@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('img-min', function () {
-    return gulp.src('./fullpage-js/img/*')
+    return gulp.src('./fullpage-js/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./fullpage-js/img/'))
 });

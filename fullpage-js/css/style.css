@@ -55,7 +55,7 @@ body {
   margin: 15px 70px; }
   .separator_inner {
     margin: 15px 0 15px 60px;
-    width: 50%; }
+    width: 30%; }
 
 li {
   font: 35px Arial, Helvetica, sans-serif;
@@ -78,7 +78,7 @@ li {
   background-size: cover; }
 
 .section-2 .separator {
-  margin-right: 40%; }
+  width: 30%; }
 
 .section-2__left-col {
   height: 100%;
@@ -108,7 +108,37 @@ li {
     background: url(../img/bg-slide-4-chb.jpg) 50% 30%;
     background-size: cover; }
 
-.section-4 .col-xs-3 {
-  height: 100%; }
-  .section-4 .col-xs-3:nth-of-type(2n+1) {
-    background: #f1f1f1; }
+.section-4 {
+  position: relative; }
+  .section-4 .col-xs-3 {
+    height: 100%;
+    text-align: center;
+    padding-top: 250px; }
+    .section-4 .col-xs-3:nth-of-type(2n+1) {
+      background: #f1f1f1; }
+    .section-4 .col-xs-3 img {
+      height: 220px;
+      max-width: 100%; }
+  .section-4__abs-pos {
+    position: absolute;
+    top: 40px;
+    left: 4%;
+    z-index: 10; }
+
+.height-wrapper {
+  height: 110px; }
+
+.tech-name {
+  font: 32px "avantgardegothiccttregular", Arial, Helvetica, sans-serif;
+  margin-top: 20px; }
+  .tech-name__wrapper {
+    height: 100px; }
+  .tech-name__details {
+    font: 20px "avantgardegothiccttregular", Arial, Helvetica, sans-serif;
+    margin-top: 20px; }
+  .tech-name__descr {
+    font: 20px/1.4 Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    color: #888;
+    margin-top: 40px; }
