@@ -173,3 +173,19 @@ li {
 .section-6 .img-wrapper {
   padding-top: 4%;
   text-align: center; }
+
+.section-7 .img-wrapper {
+  margin-top: 50px;
+  position: relative; }
+  .section-7 .img-wrapper img {
+    width: 100%; }
+
+.section-7 .address-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.6); }
+
+.address {
+  font: 24px/1.4 Arial, Helvetica, sans-serif; }
