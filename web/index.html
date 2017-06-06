@@ -14,6 +14,14 @@
 		<!-- <link rel="stylesheet" href="revealjs/css/reveal.css">
 		<link rel="stylesheet" href="revealjs/css/theme/white.css" id="theme"> -->
 
+		<script src="https://www.google.com/recaptcha/api.js?hl=ru" async defer></script>
+		<script>
+            function onSubmit(token) {
+                document.getElementById("contact-form").submit();
+            }
+		</script>
+
+
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -74,7 +82,7 @@
 					<div class="title">Технологии</div>
 					<div id="main" class="container">
 
-						<!-- Image 
+						<!-- Image
 							<a href="#" class="image featured">
 								<img src="images/pic01.jpg" alt="" />
 							</a>-->
@@ -198,7 +206,8 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="send.php">
+										<form method="post" name="contact" id="contact-form" action="app.php">
+                                            <input type="hidden" name="form-action" value="contact"/>
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
 													<input type="text" name="name" id="contact-name" placeholder="Имя" />
@@ -215,7 +224,12 @@
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Отправить" /></li>
+                                                        <li>
+                                                            <button class="style1 g-recaptcha"
+                                                                    data-sitekey="6LcdPyQUAAAAAGYZxfSUF3XuweGnDlhTAzfjqtor"
+                                                                    data-callback='onSubmit'>Отправить
+                                                            </button>
+                                                        </li>
 														<li><input type="reset" class="style2" value="Сбросить" /></li>
 													</ul>
 												</div>
