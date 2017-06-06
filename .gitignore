@@ -19,3 +19,4 @@
 test.php
 node_modules
 sftp-config.json
+composer.phar

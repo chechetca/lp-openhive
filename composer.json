@@ -1,0 +1,21 @@
+{
+  "name": "CIFRA/lp-openhive",
+  "description": "Landing page for Openhive project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nikolay",
+      "email": "mitrofanovnk@gmail.com"
+    }
+  ],
+  "require": {
+    "google/recaptcha": "^1.1",
+    "irazasyed/telegram-bot-sdk": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "OpenHive\\LP\\": "backend/"
+    }
+  }
+}
