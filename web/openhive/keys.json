@@ -1,11 +1,11 @@
 {
-	website: "openhive.ru",
-	name: "openHive Ltd.",
-	keys: [
+	"website": "openhive.ru",
+	"name": "openHive Ltd.",
+	"keys": [
 		{
-			key: "abc...123",
-			fromDate: "2017-01-01 00:00:00",
-			toDate: "2017-05-24 12:00:00"
-		},
+			"key": "abc...123",
+			"fromDate": "2017-01-01 00:00:00",
+			"toDate": "2017-05-24 12:00:00"
+		}
 	]
 }
