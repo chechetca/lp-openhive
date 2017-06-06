@@ -9,4 +9,4 @@ if (isset($_POST['form-action'])) {
     $formHandler->handle($_POST['form-action']);
 }
 
-header('Location: /');
+header('Location: /' . (isset($_GET['lang']) && 'en' === $_GET['lang'] ? 'en/' : ''));

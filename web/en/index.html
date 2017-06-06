@@ -10,6 +10,13 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 		<link rel="icon" type="image/png" href="../images/openHive_favicon_color.png" />
 
+		<script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
+		<script>
+            function onSubmit(token) {
+                document.getElementById("contact-form").submit();
+            }
+		</script>
+
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -194,7 +201,8 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="../send.php">
+										<form method="post" name="contact" id="contact-form" action="../app.php?lang=en">
+											<input type="hidden" name="form-action" value="contact"/>
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
 													<input type="text" name="name" id="contact-name" placeholder="Name" />
@@ -211,7 +219,12 @@
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
+														<li>
+															<button class="style1 g-recaptcha"
+																	data-sitekey="6LcdPyQUAAAAAGYZxfSUF3XuweGnDlhTAzfjqtor"
+																	data-callback='onSubmit'>Send
+															</button>
+														</li>
 														<li><input type="reset" class="style2" value="Reset" /></li>
 													</ul>
 												</div>
@@ -243,7 +256,7 @@
 														<a href="https://vk.com/openhive" target="_blank"><span class="icon fa-vk"></span></a>&nbsp; &nbsp; &nbsp;
 														<a href="https://www.instagram.com/openhive" target="_blank"><span class="icon fa-instagram"></span></a>&nbsp; &nbsp; &nbsp;
 														<a href="https://t.me/openhive" target="_blank" style="font-style: none;"><span class="icon fa-paper-plane"></span></a>&nbsp; &nbsp; &nbsp;
-														<a href="https://t.me/openhive" target="_blank" class="icon"><big><b>S</b></big></a>
+														<a href="https://snapster.io/room105935" target="_blank" class="icon"><big><b>S</b></big></a>
 														<!-- <a href="#" target="_blank"><span class="icon fa-github"></span></a>
 														<a href="#" target="_blank"><span class="icon fa-bitbucket"></span></a> -->
 													</p>
@@ -277,7 +290,7 @@
 					<div id="copyright">
 						<ul>
 							<li>&copy; 2017, openHive</li>
-							<li>LLC "Tsifra"</li>
+							<li>Digit LLC</li>
 						</ul>
 					</div>
 				</div>
