@@ -26,7 +26,7 @@ gulp.task('watch', function () {
         notify: false,
         ghostMode: false,
         server: {
-            baseDir: "./"
+            baseDir: "./fullpage-js/"
 
         }
     });
