@@ -27,7 +27,8 @@
   font-style: normal; }
 
 body {
-  font: 28px/1.4 Arial; }
+  font: 28px/1.4 Arial;
+  color: #595959; }
 
 .d-ib {
   display: inline-block;
@@ -37,7 +38,8 @@ body {
   text-align: center; }
 
 .va-c {
-  height: 100%; }
+  height: 100%;
+  font-size: 0; }
   .va-c:before {
     content: '';
     display: inline-block;
@@ -46,8 +48,12 @@ body {
     vertical-align: middle; }
 
 .heading {
-  font: 74px/1.4 "avantgardegothiccttregular", Arial, Helvetica, sans-serif;
-  margin-left: 60px; }
+  font: 70px/1.4 "avantgardegothiccttbold", Arial, Helvetica, sans-serif;
+  margin-left: 60px;
+  color: #000; }
+
+h1 {
+  color: #000; }
 
 .separator {
   height: 4px;
@@ -62,8 +68,11 @@ li {
   margin: 30px 0; }
 
 .section-1 h1 {
-  font: 85px/1.4 "avantgardegothiccttregular", Arial, Helvetica, sans-serif;
+  font: 85px/1.4 "avantgardegothiccttbold", Arial, Helvetica, sans-serif;
   margin-top: 0; }
+
+.section-1 h3 {
+  font-size: 30px; }
 
 .section-1 img {
   max-height: 100%; }
@@ -71,6 +80,10 @@ li {
 .section-1__left-col {
   height: 100%;
   background: url("../img/bg-slide-1-chb.png") left;
+  background-size: cover; }
+
+.section-1-2 .section-2__left-col {
+  background: url("../img/bg-slide-1-2.jpg") 15%;
   background-size: cover; }
 
 .section-2_2 .section-2__left-col {
@@ -88,25 +101,25 @@ li {
 .section-2__right-col {
   height: 100%; }
 
-.section-2__inner-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
 .section-2 li {
   font: 35px Arial, Helvetica, sans-serif;
-  margin: 30px 0; }
+  margin: 25px 0; }
 
 .section-3 {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  position: relative; }
   .section-3 .fp-tableCell {
-    vertical-align: bottom; }
+    vertical-align: top; }
   .section-3 ul {
     margin-left: 60px; }
   .section-3__img {
     height: 300px;
     background: url(../img/bg-slide-4-chb.jpg) 50% 30%;
-    background-size: cover; }
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 .section-4 {
   position: relative; }
@@ -188,3 +201,16 @@ li {
   max-width: 40%;
   padding: 40px 20px;
   background: rgba(255, 255, 255, 0.6); }
+
+.section-2_3 .section-2__left-col {
+  height: 100%;
+  background: url("../img/bg-slide-10.jpg") center;
+  background-size: cover; }
+
+.section-2_4 .section-2__left-col {
+  height: 100%;
+  background: url("../img/bg-slide-11.jpg") center;
+  background-size: cover; }
+
+.section-2_4 li {
+  margin: 15px 0; }
